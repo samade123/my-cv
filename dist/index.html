@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Digital CV</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/style" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./site/css/app.css"> -->
+
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+</head>
+
+<body>
+  <main v-cloak style="left: 0;">
+    <!-- <header>
+      <div class="header-title ">
+        <i class="material-icons ">book</i>
+        <span class="title " style="font-weight: bold; margin-left: 10px;">My digital CV</span>
+      </div>
+    </header> -->
+
+    <page-root v-if="site.status == 'root'"></page-root>
+    <page-notfound v-if="site.status == 'notfound'"></page-notfound>
+    <page-success v-if="site.status == 'success'"></page-success>
+  </main>
+
+  <script type="text/javascript" src="/file"></script>
+  <!-- <script type="text/javascript" src="./site/js/app.js"></script> -->
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>
