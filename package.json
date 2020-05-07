@@ -1,0 +1,46 @@
+{
+  "name": "bond-microsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/eventengineering/bond-microsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/eventengineering/bond-microsite#readme",
+  "devDependencies": {
+    "laravel-mix": "^5.0.1",
+    "resolve-url-loader": "^3.1.1",
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "animate.css": "^3.7.2",
+    "axios": "^0.19.2",
+    "bootstrap-sass": "^3.4.1",
+    "copy-to-clipboard": "^3.3.1",
+    "cross-env": "^7.0.0",
+    "express": "^4.17.1",
+    "ip": "^1.1.5",
+    "material-design-icons": "^3.0.1",
+    "modern-normalize": "^0.6.0",
+    "nodemon": "^2.0.3",
+    "projecthub": "git+ssh://git@bitbucket.org/eventengineering/projecthub-js.git",
+    "qr-image": "^3.2.0",
+    "tabulator-tables": "^4.5.3",
+    "text-security": "^3.1.1",
+    "vue": "^2.6.11",
+    "vue-typer": "^1.2.0",
+    "vuesax": "^3.11.13",
+    "wow.js": "^1.2.2"
+  }
+}
